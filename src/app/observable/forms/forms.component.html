@@ -1,0 +1,28 @@
+<form [formGroup] = "profileForm" (ngSubmit)="onSubmit(profileForm)" class="horizontal-form">
+  <div class="panel">
+      <div class="panel-header primary">
+<h1>Reactive Form</h1>
+      </div>
+      <div class="panel-body">
+       <div class="form-group">
+           <div class="row">
+
+<div class="form-control">
+<input type="text" class="form-control" formControlName="firstName" placeholder="First Name">
+</div>
+<div class="form-control">
+    <input type="text" class="form-control" formControlName="lastName" placeholder="Last Name">
+    </div>
+           </div>
+
+        <div class="row">
+            <button class="btn btn-primary">Submit</button>
+        </div>
+          
+       </div>
+
+      </div>
+  </div>
+
+
+</form>

@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Angular-Promise"
+  "defaultProject": "Angular-Promise",
+  "cli": {
+    "analytics": "c5a77b3f-4280-421f-9c4b-cdd937030242"
+  }
 }

@@ -1,0 +1,253 @@
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  .dropdown-submenu {
+    position:relative;
+  }
+  .dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+  }
+  
+  /* rotate caret on hover */
+  .dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+  } 
+  
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 460px;
+  }
+  
+  .dd{
+    text-align: center;
+  }
+  @mixin fill-full-space {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  @mixin center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-news {
+    background-color: #fffaf0;
+  
+    h2 {
+      font-size: 24px;
+      letter-spacing: 0.4px;
+    }
+  
+    .gallery {
+      .item {
+        height: 0;
+        overflow: hidden;
+        margin-bottom: 30px;
+        padding-bottom: 100%;
+        background-color: #efefef;
+        position: relative;
+      }
+      
+      a {
+        @include fill-full-space;
+        @include center-center;
+      }
+  
+      a:hover .img-title {
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
+  
+      .img-title {
+        @include fill-full-space;
+        @include center-center;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.5s;
+        color: white;
+      }
+  
+      img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+  }
+  
+  .pt-60px {
+    padding-top: 60px;
+  }
+  
+  .pb-60px {
+    padding-bottom: 60px;
+  }
+  .jumbotron {
+    color: #2c3e50;
+    background: #ecf0f1;
+  }
+  
+  .navbar-inverse {
+    background: #2c3e50;
+  }
+  
+  .navbar-inverse .navbar-nav>li>a {
+    color: white;
+  }
+  
+  .navbar-inverse .navbar-brand {
+    color: white;
+  }
+  
+  * {
+  box-sizing: border-box;
+  }
+  
+  body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+  max-width: 1000px;
+  margin: auto;
+  }
+  
+  h1 {
+  font-size: 50px;
+  word-break: break-all;
+  }
+  
+  .row {
+  margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+  padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+  float: left;
+  width: 25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  
+  /* Content */
+  .content {
+  background-color: white;
+  padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (width: 900px) {
+  .column {
+    width: 50%;
+  }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (width: 600px) {
+  .column {
+    width: 100%;
+  }
+  }
+  img{
+    cursor: pointer;
+    }
+    .card {
+      width: 19%;
+      display: inline-block;
+      margin: 3px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+    }
+  
+  
+    div.card {
+      width: 19%;
+      display: inline-block;
+      margin: 3px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+  }
+  
+  
+  
+  
+  div.container {
+    padding: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    div.title {
+      text-align: center;
+      padding: 10px 20px;
+    }
+    .bread{
+      margin-top: 15px;
+    }
+    div.card {
+      width: 19% !important;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+    }
+    
+    div.header {
+    -webkit-box-shadow:0px 1px 1px #de1dde;
+   -moz-box-shadow:0px 1px 1px #de1dde;
+   box-shadow:0px 1px 1px #de1dde;
+      color: white;
+      padding: 10px;
+      font-size: 40px;
+    }
+    
+    div.container {
+      padding: 10px;
+    }
+  
+    .equep-heading{
+      font-size: 20px;
+      font-weight: 300;
+      /* background: #838383; */
+      padding: 5px;
+      /* color: #fff; */
+      margin-top: 10px;
+      width: 98%;
+    }
+  
+    .nav-color{
+      background-color: rgb(95, 95, 95) !important;
+    }
+    .nav-head-color{
+      color:#fff !important;
+    }

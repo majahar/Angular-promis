@@ -1,0 +1,76 @@
+<div class="my-3">
+    <h2>Replay subject</h2>
+    <hr>
+
+
+    <h3>{{methodInterval ? 'Interval Started': 'Add video'}}</h3>
+
+    <div class="row justify-content-center" *ngIf="!methodInterval">
+    <div class="col-md-4" >
+            <input type="text" class="form-control" #vedio>
+    </div>
+    <div class="col-md-4">
+        <button (click)= "addvedio(vedio)" class="btn btn-success">Add</button>
+    </div>
+   
+    </div>
+    <div class="col-md-4" class="text-right">
+            <button (click)= "toggleMethod()" class="btn btn-warning">Toggle Method</button>
+        </div>
+    <hr *ngIf="!methodInterval">
+    <div class="row">
+        <div class="col-md-4">
+
+            <h3>Ex -User 1 </h3>
+            <hr>
+            <div class="div">
+                <ul class="userSection">
+                    <li *ngFor="let tech of userList1">
+                        {{tech}}
+                       
+                    </li>
+                    
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+
+                <h3>Ex -User 2 </h3>
+                <hr>
+                <div>
+                        <ul class="userSection">
+                                <li *ngFor="let tech of userList2">
+                                    {{tech}}
+                                   
+                                </li>
+                                
+                            </ul>
+                    <button class="btn btn-success" (click)="SubscribeOrUnSubscribeUser2()" [ngClass]="subscribeOrUnscubscribe2 ? 'btn btn-success': 'btn btn-danger'"> {{subscribeOrUnscubscribe2 ? 'Subscribe': 'UnSubscribe'}}</button>
+
+                </div>
+
+    
+    
+            </div>
+            <div class="col-md-4">
+
+                    <h3>Ex -User 3 </h3>
+                    <hr>
+                    <div >
+                            <ul class="userSection">
+                                    <li *ngFor="let tech of userList3">
+                                        {{tech}}
+                                       
+                                    </li>
+                                    
+                                </ul>
+                        <button class="btn btn-success" (click)="SubscribeOrUnSubscribeUser3()" [ngClass]="subscribeOrUnscubscribe3  ? 'btn btn-success': 'btn btn-danger'"> {{subscribeOrUnscubscribe3  ? 'Subscribe': 'UnSubscribe'}}</button>
+    
+                    </div>
+        
+        
+                </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+ul.userSection li {
+    background: #fffff;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf;
+    /* border-style: none; */
+    list-style: none;
+    padding: 20px;
+}

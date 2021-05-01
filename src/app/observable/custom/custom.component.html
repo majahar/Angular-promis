@@ -1,0 +1,40 @@
+<div class="my-3">
+    <h1>Custom Observable</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+                <p>Ex-1 custom observable using settime out</p>
+
+                          <ul [ngClass]="userStatus == 'success' ? 'success' : userStatus == 'error' ? 'error' : ''" class="userList" id="elContainer">
+                       
+                </ul>
+            
+        </div>
+        <div class="col-md-6">
+                <p>Ex-2 custom observable using time interval</p>
+
+                    <ul [ngClass]="userStatus2 == 'success' ? 'success' : userStatus2 == 'error' ? 'error' : ''" class="userList" id="elContainer2">
+                           
+                    </ul>
+   
+                
+            </div>
+        
+    </div>
+    <hr>
+
+    <div class="row">
+            <div class="col-md-12">
+                <div class="row-card">
+                    <div class="card-header">
+                            <p>Ex-3 </p>
+                            <p> Random Name : ['Majahar','Mahfooj','Imran','Zaid','Salman','Shahid','Sameer']</p>
+                        Name :<span class="badge badge-primary">{{name}}</span>
+
+                    </div>
+                </div>
+                </div>
+
+
+    </div>
+</div>
